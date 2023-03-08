@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 """
-Copyright (c) 2019 - present AppSeed.us
+Copyright (c) 2023 Stephen Papierski
+Copyright (c) 2019 - 2022 AppSeed.us
 """
 
 from flask import render_template, redirect, request, url_for
@@ -96,7 +97,7 @@ def register():
 @blueprint.route('/logout')
 def logout():
     logout_user()
-    return redirect(url_for('authentication_blueprint.login')) 
+    return redirect(url_for('authentication_blueprint.login'))
 
 # Errors
 
